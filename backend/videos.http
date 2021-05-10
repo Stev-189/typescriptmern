@@ -1,0 +1,22 @@
+@api= http://localhost:5000
+
+GET {{api}}/videos
+
+###
+GET {{api}}/videos/60720
+
+###
+POST {{api}}/videos
+Content-Type: application/json
+
+{
+    "url": "https://www.youtube.com/watch?v=6rC7Wc8nO9w",
+    "title": "mario",
+    "description":"mariosoccer"
+}
+
+###
+DELETE {{api}}/videos/6072091fb16bea0c327e37ac
+
+###
+PUT {{api}}/videos/1

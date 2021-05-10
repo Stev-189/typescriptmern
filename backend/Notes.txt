@@ -1,0 +1,32 @@
+npm init -y
+npm i express mongoose morgan dotenv cors
+npm i -D typescript @types/express @types/morgan @types/mongoose @types/cors @types/node ts-node-dev
+npx tsc --init //creamos tsconfig
+    modificamos el tsconfig
+    "target": "es6",
+    "outDir": "./dist",
+    "rootDir": "./src",
+//reemplazondo nodemom packat.json
+    "dev":"ts-node-dev src/index.ts"
+
+// instalar mongodb
+//rrancar mongodb
+~/mongodb/bin/mongod
+
+//V2
+brew tap mongodb/brew
+brew install mongodb-community
+brew services list // si dice stopet esta detenido
+brew services start mongodb-community
+//https://www.youtube.com/watch?v=gBOZo9aivyA
+
+// para ver respuestas de api res usar rest client
+
+// comandos vasicos mongodn por que seimpre s eme olvidan
+mongo
+show dbs
+use [dbname]
+show collections
+db.[collectionName].find().pretty()
+db.[collectionName].drop()//elimina datos de collecion
+// si modificamos el schema de mongo mejor reiniciar manuel el server

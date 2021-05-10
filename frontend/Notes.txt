@@ -1,0 +1,11 @@
+npx create-react-app frontend --template typescript
+npm i react-router-dom
+npm i @types/react-router-dom
+npm i axios
+npm i bootswach
+
+//notificaciones 
+npm install --save react-toastify
+npm install --save @types/react-toastify
+01:00:00 https://www.youtube.com/watch?v=wOLo-B7mrZM
+
